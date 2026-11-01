@@ -3,53 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Elena Cake — Авторские торты и десерты на заказ, Владимир</title>
+<title>KristyCake — авторские торты на заказ во Владимире</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#FFFDF9;--card:#FFFFFF;--soft:#FDF4F2;--accent:#E2847A;--accent-h:#D16B61;
-  --text:#2C2727;--muted:#7E7777;--border:#F0E6DE;--field:#FAFAFA;--shadow:0 10px 30px rgba(180,140,130,.10);
-  --r:16px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#FBF8F1;--card:#FFFFFF;--soft:#EEF4E6;--accent:#2F5D46;--accent-h:#244A37;--rose:#E8B4B8;
+  --text:#25302A;--muted:#6E7A72;--border:#E5E9DC;--field:#F8FAF4;--shadow:0 10px 30px rgba(47,93,70,.10);--r:16px;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#1D1919;--card:#272222;--soft:#322828;--text:#F4ECE8;--muted:#B3A7A3;--border:#3B3232;--field:#2D2727;--shadow:0 10px 30px rgba(0,0,0,.3);color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#1D1919;--card:#272222;--soft:#322828;--text:#F4ECE8;--muted:#B3A7A3;--border:#3B3232;--field:#2D2727;--shadow:0 10px 30px rgba(0,0,0,.3);color-scheme:dark}
+  --bg:#141A16;--card:#1D2520;--soft:#233028;--accent:#8CC9A2;--accent-h:#A5D8B8;--text:#EEF3EE;--muted:#A3B0A7;--border:#2D3A32;--field:#222C26;--shadow:0 10px 30px rgba(0,0,0,.35);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141A16;--card:#1D2520;--soft:#233028;--accent:#8CC9A2;--accent-h:#A5D8B8;--text:#EEF3EE;--muted:#A3B0A7;--border:#2D3A32;--field:#222C26;--shadow:0 10px 30px rgba(0,0,0,.35);color-scheme:dark}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
 body{font-family:'Rubik',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;padding-bottom:40px}
-h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:600}
+h1,h2,h3,.logo{font-family:'Marck Script','Brush Script MT',cursive;font-weight:400}
 .wrap{max-width:960px;margin:0 auto;padding:0 20px}
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:1px solid var(--border)}
-.nav{display:flex;justify-content:space-between;align-items:center;height:60px}
-.logo{font-family:'Playfair Display',Georgia,serif;font-size:23px;font-weight:700;color:var(--accent);text-decoration:none}
+.nav{display:flex;justify-content:space-between;align-items:center;height:62px}
+.logo{font-size:30px;color:var(--accent);text-decoration:none}
 .nav a.l{color:var(--muted);text-decoration:none;font-size:14px;margin-left:16px}
 .nav a.l:hover{color:var(--accent)}
-.hero{text-align:center;padding:56px 0 30px}
+.hero{text-align:center;padding:54px 0 28px}
 .tag{display:inline-block;background:var(--soft);color:var(--accent);padding:6px 14px;border-radius:20px;font-size:13px;font-weight:500;margin-bottom:16px}
-.hero h1{font-size:42px;line-height:1.15;margin-bottom:16px}
-.hero h1 em{color:var(--accent);font-style:italic}
-.hero p{color:var(--muted);max-width:540px;margin:0 auto 26px;font-size:16px}
-.btn{display:inline-block;background:var(--accent);color:#fff;padding:14px 30px;border-radius:30px;text-decoration:none;font-weight:500;box-shadow:0 6px 18px rgba(226,132,122,.35);transition:background .2s}
+.hero h1{font-size:50px;line-height:1.1;margin-bottom:16px;color:var(--accent)}
+.hero p{color:var(--muted);max-width:560px;margin:0 auto 26px;font-size:16px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:14px 30px;border-radius:30px;text-decoration:none;font-weight:500;box-shadow:0 6px 18px rgba(47,93,70,.3)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn{color:#10231A}}
 .btn:hover{background:var(--accent-h)}
 .btn.ghost{background:transparent;color:var(--accent);box-shadow:none;border:1px solid var(--accent);margin-left:8px}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:30px 0 10px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:30px 0 8px}
 .fact{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:16px;text-align:center}
-.fact b{display:block;font-family:'Playfair Display',Georgia,serif;font-size:22px;color:var(--accent)}
+.fact b{display:block;font-size:22px;color:var(--accent);font-family:'Marck Script',cursive;font-weight:400}
 .fact span{font-size:13px;color:var(--muted)}
-h2.t{font-size:28px;text-align:center;margin:56px 0 8px}
+h2.t{font-size:36px;text-align:center;margin:56px 0 6px;color:var(--accent)}
 .sub{text-align:center;color:var(--muted);margin-bottom:24px;font-size:15px}
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
-.ph{aspect-ratio:1/1;border-radius:var(--r);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;font-size:46px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
-.ph small{font-size:13px;font-weight:500;color:#5a4040;background:rgba(255,255,255,.75);padding:4px 12px;border-radius:14px}
-.g1{background:linear-gradient(135deg,#FAD0C9,#F6E1DC)}.g2{background:linear-gradient(135deg,#E8D5C4,#F3E6D8)}
-.g3{background:linear-gradient(135deg,#F5C6D0,#FBE3E8)}.g4{background:linear-gradient(135deg,#FFE3B8,#FFF1D9)}
-.g5{background:linear-gradient(135deg,#D9C7B8,#EADCCF)}.g6{background:linear-gradient(135deg,#F9D6D0,#FCEDE9)}
+.ph{aspect-ratio:1/1;border-radius:var(--r);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font-size:48px;box-shadow:var(--shadow)}
+.ph small{font-size:13px;font-weight:500;color:#34413a;background:rgba(255,255,255,.8);padding:4px 12px;border-radius:14px}
+.g1{background:linear-gradient(135deg,#F9D9DC,#FCEDEE)}.g2{background:linear-gradient(135deg,#CFE3C4,#E6F0DD)}
+.g3{background:linear-gradient(135deg,#F2B8BC,#F9DADC)}.g4{background:linear-gradient(135deg,#E8DCC6,#F4ECDD)}
+.g5{background:linear-gradient(135deg,#BFD9A8,#DCEBCB)}.g6{background:linear-gradient(135deg,#F5E2C4,#FBF0DC)}
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
 .step{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:22px}
 .step i{display:flex;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;align-items:center;justify-content:center;font-style:normal;font-weight:600;margin-bottom:12px}
-.step h3{font-size:18px;margin-bottom:6px}.step p{font-size:14px;color:var(--muted)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .step i{color:#10231A}}
+.step h3{font-size:24px;margin-bottom:4px;color:var(--accent)}.step p{font-size:14px;color:var(--muted)}
 .card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:30px;box-shadow:var(--shadow)}
 .fg{margin-bottom:22px}
 label{display:block;font-weight:500;font-size:14px;margin-bottom:8px}
@@ -61,60 +62,54 @@ select:focus,input:focus{border-color:var(--accent)}
 .rc input:checked+label{border-color:var(--accent);background:var(--soft);color:var(--accent);font-weight:500}
 .rc input:focus-visible+label{outline:2px solid var(--accent)}
 .sum{background:var(--soft);border:1px dashed var(--accent);border-radius:12px;padding:16px 20px;margin:24px 0 8px;display:flex;justify-content:space-between;align-items:center}
-.sum span{color:var(--muted);font-size:15px}
-.sum b{font-family:'Playfair Display',Georgia,serif;font-size:26px;color:var(--accent)}
+.sum span{color:var(--muted);font-size:15px}.sum b{font-size:26px;color:var(--accent);font-weight:600}
 .note{font-size:12px;color:var(--muted);margin-bottom:20px}
 .oa{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.bo{padding:14px;border-radius:12px;border:none;color:#fff;font:inherit;font-weight:500;cursor:pointer}
-.tg{background:#229ED9}.wa{background:#1FA855}.bo:hover{opacity:.9}
+.bo{padding:14px;border-radius:12px;border:none;color:#fff;font:inherit;font-weight:500;cursor:pointer;text-align:center;text-decoration:none;display:block}
+.wa{background:#1FA855}.ig{background:#C13584}.bo:hover{opacity:.9}
 .reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
 .rv{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:20px}
-.rv .st{color:#F2B33D;letter-spacing:2px;margin-bottom:8px}
-.rv p{font-size:14px;margin-bottom:12px}.rv b{font-size:13px;color:var(--muted);font-weight:500}
-.fl{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.fi{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px}
-.fi h3{font-size:17px;margin-bottom:6px}.fi p{font-size:13px;color:var(--muted)}
+.rv .st{color:#F2B33D;letter-spacing:2px;margin-bottom:8px}.rv p{font-size:14px;margin-bottom:12px}.rv b{font-size:13px;color:var(--muted);font-weight:500}
 details{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-bottom:10px}
 summary{cursor:pointer;font-weight:500}details p{margin-top:10px;font-size:14px;color:var(--muted)}
-.cta{margin-top:56px;background:linear-gradient(135deg,#E2847A,#D16B61);color:#fff;border-radius:24px;padding:40px 24px;text-align:center}
-.cta h2{font-size:28px;margin-bottom:8px}.cta p{opacity:.92;margin-bottom:20px}
-.cta .btn{background:#fff;color:#C0564B;box-shadow:none}
-footer{text-align:center;color:var(--muted);font-size:13px;margin-top:30px}
-footer a{color:var(--accent)}
-@media(max-width:600px){.hero h1{font-size:30px}.oa{grid-template-columns:1fr}.card{padding:20px}.btn.ghost{margin:10px 0 0}.nav a.l.hide{display:none}}
+.cta{margin-top:56px;background:linear-gradient(135deg,#2F5D46,#3F7A5C);color:#fff;border-radius:24px;padding:40px 24px;text-align:center}
+.cta h2{font-size:38px;margin-bottom:6px}.cta p{opacity:.92;margin-bottom:20px}
+.cta .btn{background:#fff;color:#2F5D46;box-shadow:none}
+footer{text-align:center;color:var(--muted);font-size:13px;margin-top:30px}footer a{color:var(--accent)}
+@media(max-width:600px){.hero h1{font-size:38px}.oa{grid-template-columns:1fr}.card{padding:20px}.btn.ghost{margin:10px 0 0}.nav a.l.hide{display:none}}
 </style>
 </head>
 <body>
 <header><div class="wrap nav">
-  <a href="#" class="logo">Elena Cake</a>
+  <a href="#" class="logo">KristyCake</a>
   <div><a class="l hide" href="#gallery">Работы</a><a class="l hide" href="#how">Как заказать</a><a class="l" href="#calc">Рассчитать торт</a></div>
 </div></header>
 
 <div class="wrap">
   <section class="hero">
-    <span class="tag">Владимир · Натуральные ингредиенты</span>
-    <h1>Торты с душой<br>к вашему <em>празднику</em></h1>
-    <p>Бенто-торты, праздничные и свадебные десерты ручной работы. Выберите начинку, узнайте стоимость и отправьте заявку кондитеру в один клик.</p>
+    <span class="tag">Владимир · Авторские торты Кристины Маркеевой</span>
+    <h1>Кондитерская мастерская:<br>торты и десерты на заказ</h1>
+    <p>Декор любой сложности, десерты в наличии и срочные заказы. Соберите свой торт, узнайте примерную стоимость и отправьте заявку в WhatsApp в один клик.</p>
     <a href="#calc" class="btn">Собрать свой торт</a><a href="#gallery" class="btn ghost">Смотреть работы</a>
     <div class="facts">
-      <div class="fact"><b>100%</b><span>натуральные ингредиенты</span></div>
-      <div class="fact"><b>от 1 200 ₽</b><span>бенто-торт</span></div>
-      <div class="fact"><b>от 2 дней</b><span>на изготовление</span></div>
+      <div class="fact"><b>Авторский декор</b><span>любой сложности</span></div>
+      <div class="fact"><b>Срочные заказы</b><span>по возможности</span></div>
+      <div class="fact"><b>В наличии</b><span>готовые десерты</span></div>
       <div class="fact"><b>Владимир</b><span>самовывоз и доставка</span></div>
     </div>
   </section>
 
   <section id="gallery">
-    <h2 class="t">Наши работы</h2>
-    <p class="sub">Каждый торт делается под ваш повод и вкус</p>
-    <!-- Замените .ph на <img src="..."> с реальными фото из группы VK -->
+    <h2 class="t">Торты на любой повод</h2>
+    <p class="sub">Для женщин, для мужчин, детские и корпоративные</p>
+    <!-- Заменить .ph на <img src="..."> с реальными фото из Instagram/VK мастера -->
     <div class="gallery">
-      <div class="ph g1">🎂<small>Праздничный торт</small></div>
-      <div class="ph g2">🍫<small>Шоколадный трюфель</small></div>
-      <div class="ph g3">🍓<small>Клубника-Ваниль</small></div>
-      <div class="ph g4">🥭<small>Манго-Маракуйя</small></div>
-      <div class="ph g5">🧁<small>Капкейки</small></div>
-      <div class="ph g6">🍰<small>Бенто-торт</small></div>
+      <div class="ph g1">💗<small>Для женщин</small></div>
+      <div class="ph g2">⭐<small>Для мужчин</small></div>
+      <div class="ph g3">🍓<small>Торты-цифры</small></div>
+      <div class="ph g4">🧸<small>Детские</small></div>
+      <div class="ph g5">🏢<small>Корпоративные</small></div>
+      <div class="ph g6">🍰<small>Десерты в наличии</small></div>
     </div>
   </section>
 
@@ -122,33 +117,33 @@ footer a{color:var(--accent)}
     <h2 class="t">Как заказать</h2>
     <p class="sub">Три простых шага, без долгих переписок</p>
     <div class="steps">
-      <div class="step"><i>1</i><h3>Соберите торт</h3><p>Выберите формат, начинку, вес и дату в калькуляторе ниже.</p></div>
-      <div class="step"><i>2</i><h3>Отправьте заявку</h3><p>Нажмите кнопку, и готовое сообщение откроется в Telegram или WhatsApp.</p></div>
-      <div class="step"><i>3</i><h3>Подтвердите дату</h3><p>Елена уточнит детали, согласует дизайн и подтвердит заказ с предоплатой.</p></div>
+      <div class="step"><i>1</i><h3>Соберите торт</h3><p>Выберите форму, начинку, вес и дату в калькуляторе ниже.</p></div>
+      <div class="step"><i>2</i><h3>Отправьте заявку</h3><p>Готовое сообщение со всеми деталями откроется в WhatsApp.</p></div>
+      <div class="step"><i>3</i><h3>Согласуйте детали</h3><p>Кристина уточнит дизайн, назовёт точную цену и подтвердит заказ.</p></div>
     </div>
   </section>
 
   <section id="calc">
     <h2 class="t">Калькулятор торта</h2>
-    <p class="sub">Стоимость примерная, точную назовёт кондитер после уточнения деталей</p>
+    <p class="sub">Стоимость примерная, точную назовёт мастер после уточнения декора</p>
     <div class="card">
-      <div class="fg"><label>Формат десерта</label>
+      <div class="fg"><label>Тип торта</label>
         <div class="rg">
-          <div class="rc"><input type="radio" id="t1" name="ct" value="bento" checked><label for="t1">Бенто (450 г)<br><strong>1 200 ₽</strong></label></div>
-          <div class="rc"><input type="radio" id="t2" name="ct" value="classic"><label for="t2">Торт (от 1.5 кг)<br><strong>от 2 700 ₽</strong></label></div>
-          <div class="rc"><input type="radio" id="t3" name="ct" value="cupcakes"><label for="t3">Капкейки (6 шт)<br><strong>1 300 ₽</strong></label></div>
+          <div class="rc"><input type="radio" id="t1" name="ct" value="classic" checked><label for="t1">Классический<br><strong>от 2 700 ₽</strong></label></div>
+          <div class="rc"><input type="radio" id="t2" name="ct" value="number"><label for="t2">Цифра или сердце<br><strong>от 2 400 ₽</strong></label></div>
+          <div class="rc"><input type="radio" id="t3" name="ct" value="bento"><label for="t3">Бенто (450 г)<br><strong>1 300 ₽</strong></label></div>
         </div>
       </div>
       <div class="fg"><label for="fl">Начинка</label>
         <select id="fl">
-          <option value="Клубника-Ваниль">Клубника-Ваниль (нежный бисквит, ягодное конфи)</option>
-          <option value="Сникерс">Сникерс (шоколад, карамель, арахис)</option>
-          <option value="Красный Бархат">Красный Бархат с вишней</option>
-          <option value="Манго-Маракуйя">Тропический Манго-Маракуйя</option>
-          <option value="Шоколадный трюфель">Насыщенный шоколадный трюфель</option>
+          <option value="Клубничный с кремом">Клубничный с нежным кремом</option>
+          <option value="Шоколад-карамель">Шоколад и солёная карамель</option>
+          <option value="Красный бархат">Красный бархат</option>
+          <option value="Ягодный">Ягодный с ванильным кремом</option>
+          <option value="Фисташка-малина">Фисташка и малина</option>
         </select>
       </div>
-      <div class="fg" id="wg" style="display:none"><label for="wt">Вес торта</label>
+      <div class="fg" id="wg"><label for="wt">Вес</label>
         <select id="wt">
           <option value="1.5">1.5 кг (~6–8 персон)</option>
           <option value="2">2.0 кг (~10–12 персон)</option>
@@ -157,45 +152,35 @@ footer a{color:var(--accent)}
         </select>
       </div>
       <div class="fg"><label for="dt">Дата получения</label><input type="date" id="dt"></div>
-      <div class="fg"><label for="cm">Пожелания по декору или надписи</label><input type="text" id="cm" placeholder="Например: надпись «С Днём Рождения!», розовый крем"></div>
-      <div class="sum"><span>Примерная стоимость</span><b id="price">1 200 ₽</b></div>
-      <p class="note">Цена зависит от сложности декора. Заявка ни к чему вас не обязывает.</p>
+      <div class="fg"><label for="cm">Повод и пожелания по декору</label><input type="text" id="cm" placeholder="Например: торт-цифра «5», розовые цветы"></div>
+      <div class="sum"><span>Примерная стоимость</span><b id="price">2 700 ₽</b></div>
+      <p class="note">Итоговая цена зависит от сложности декора. Заявка ни к чему не обязывает.</p>
       <label style="text-align:center;margin-bottom:12px">Отправить заявку мастеру</label>
       <div class="oa">
-        <button class="bo tg" type="button" id="btn-tg">Отправить в Telegram</button>
-        <button class="bo wa" type="button" id="btn-wa">Отправить в WhatsApp</button>
+        <a class="bo wa" id="btn-wa" href="#" target="_blank" rel="noopener">Отправить в WhatsApp</a>
+        <a class="bo ig" href="https://www.instagram.com/kristy.cake" target="_blank" rel="noopener">Посмотреть Instagram</a>
       </div>
-    </div>
-  </section>
-
-  <section>
-    <h2 class="t">Популярные вкусы</h2>
-    <p class="sub">Любимые начинки наших клиентов</p>
-    <div class="fl">
-      <div class="fi"><h3>Клубника-Ваниль</h3><p>Воздушный ванильный бисквит, клубничный конфитюр и сливочный крем-чиз.</p></div>
-      <div class="fi"><h3>Сникерс</h3><p>Влажные шоколадные коржи, домашняя солёная карамель, жареный арахис.</p></div>
-      <div class="fi"><h3>Красный Бархат</h3><p>Бархатистая текстура, ягодная прослойка и лёгкая кислинка.</p></div>
     </div>
   </section>
 
   <section>
     <h2 class="t">Отзывы</h2>
     <p class="sub">Что говорят клиенты</p>
-    <!-- Демо-отзывы: заменить реальными из группы VK -->
+    <!-- Демо-отзывы: заменить реальными из раздела «Отзывы» -->
     <div class="reviews">
-      <div class="rv"><div class="st">★★★★★</div><p>Заказывала бенто на день рождения мужа. Красиво, очень вкусно, всё привезли вовремя. Гости просили контакты!</p><b>Анна, Владимир</b></div>
-      <div class="rv"><div class="st">★★★★★</div><p>Торт «Сникерс» на юбилей: нежный, не приторный. Надпись сделали точь-в-точь как просила.</p><b>Мария, Владимир</b></div>
-      <div class="rv"><div class="st">★★★★★</div><p>Капкейки на детский праздник разлетелись за пять минут. Спасибо за душевный подход!</p><b>Ольга, Суздаль</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>Заказывала торт-цифру на юбилей. Очень красиво, нежно и вкусно, всё привезли вовремя.</p><b>Анна, Владимир</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>Торт на 23 февраля для мужа: всем понравился, надпись сделали точь-в-точь как просила.</p><b>Мария, Владимир</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>Заказывали десерты на корпоратив. Всё свежее, аккуратно упаковано. Спасибо!</p><b>Ольга, компания</b></div>
     </div>
   </section>
 
   <section>
     <h2 class="t">Частые вопросы</h2>
     <p class="sub">&nbsp;</p>
-    <details><summary>За сколько дней нужно заказывать?</summary><p>Лучше за 3–5 дней, а на выходные и праздники ещё раньше. Бенто иногда можно успеть за 2 дня, уточняйте у кондитера.</p></details>
-    <details><summary>Есть ли доставка?</summary><p>Да, по Владимиру: стоимость зависит от района. Также возможен самовывоз.</p></details>
-    <details><summary>Можно ли сделать надпись или свой дизайн?</summary><p>Конечно. Опишите идею в поле пожеланий или пришлите референс в мессенджер.</p></details>
-    <details><summary>Как оплатить заказ?</summary><p>Предоплата для бронирования даты, остаток при получении.</p></details>
+    <details><summary>За сколько дней нужно заказывать?</summary><p>Лучше за 3–5 дней, на праздники ещё раньше. Срочные заказы возможны, уточняйте у мастера. Готовые десерты есть в наличии.</p></details>
+    <details><summary>Можно ли сделать декор по моему референсу?</summary><p>Да, декор любой сложности. Опишите идею в заявке или пришлите картинку в мессенджер.</p></details>
+    <details><summary>Есть ли доставка?</summary><p>По Владимиру возможна доставка, стоимость зависит от района. Можно забрать самому.</p></details>
+    <details><summary>Как оплатить?</summary><p>Предоплата для брони даты, остаток при получении.</p></details>
   </section>
 
   <div class="cta">
@@ -203,40 +188,40 @@ footer a{color:var(--accent)}
     <p>Рассчитайте стоимость за минуту и отправьте заявку</p>
     <a href="#calc" class="btn">Рассчитать торт</a>
   </div>
-  <footer><p style="margin-top:8px">© Elena Cake · Владимир · <a href="https://vk.com/elena_cake_vladimir" target="_blank" rel="noopener">Мы во ВКонтакте</a></p></footer>
+  <footer>
+    <p style="margin-top:8px">© KristyCake · Владимир · <a href="https://www.instagram.com/kristy.cake" target="_blank" rel="noopener">Instagram</a> · <a href="https://vk.com/kristycake" target="_blank" rel="noopener">ВКонтакте</a> · <a href="tel:+79209125192">8 (920) 912-51-92</a></p>
+  </footer>
 </div>
 
 <script>
-var PRICES={bento:1200,cupcakes:1300,perKg:1800};
+var P={classic:1800,number:1600,bento:1300};/* демо-цены за кг, заменить на реальные из прайса */
 var $=function(i){return document.getElementById(i)};
-function typeKey(){return document.querySelector('input[name="ct"]:checked').value}
-function calc(){
-  var t=typeKey(),total;
-  $('wg').style.display=t==='classic'?'block':'none';
-  if(t==='bento')total=PRICES.bento;
-  else if(t==='cupcakes')total=PRICES.cupcakes;
-  else total=Math.round(parseFloat($('wt').value)*PRICES.perKg);
-  $('price').textContent=total.toLocaleString('ru-RU')+' ₽';
+function tk(){return document.querySelector('input[name="ct"]:checked').value}
+function total(){
+  var t=tk();
+  if(t==='bento')return P.bento;
+  var w=parseFloat($('wt').value);
+  return Math.round(w*P[t]);
 }
 function msg(){
-  var names={bento:'Бенто-торт',classic:'Классический торт',cupcakes:'Капкейки (6 шт)'};
-  var t=typeKey();
-  var w=t==='classic'?'• Вес: '+$('wt').value+' кг\n':'';
-  return 'Здравствуйте, Елена! Хочу сделать заказ:\n\n• Формат: '+names[t]+'\n'+w+
+  var n={classic:'Классический торт',number:'Торт-цифра или сердце',bento:'Бенто-торт'};
+  var t=tk(),w=t==='bento'?'':'• Вес: '+$('wt').value+' кг\n';
+  return 'Здравствуйте, Кристина! Хочу сделать заказ:\n\n• Тип: '+n[t]+'\n'+w+
     '• Начинка: '+$('fl').value+'\n• Дата: '+($('dt').value||'Не указана')+
-    '\n• Декор/пожелания: '+($('cm').value.trim()||'Без особых пожеланий')+
+    '\n• Повод/декор: '+($('cm').value.trim()||'Без особых пожеланий')+
     '\n• Расчётная сумма: '+$('price').textContent+'\n\nПодскажите, свободна ли эта дата?';
 }
-// Укажите реальные контакты кондитера:
-var PHONE='79000000000',TG='username_elenacake';
-$('btn-wa').onclick=function(){window.open('https://wa.me/'+PHONE+'?text='+encodeURIComponent(msg()),'_blank')};
-$('btn-tg').onclick=function(){window.open('https://t.me/'+TG+'?text='+encodeURIComponent(msg()),'_blank')};
-document.querySelectorAll('input[name="ct"]').forEach(function(e){e.addEventListener('change',calc)});
-$('wt').addEventListener('change',calc);
-var d=new Date();d.setDate(d.getDate()+2);
+function upd(){
+  $('wg').style.display=tk()==='bento'?'none':'block';
+  $('price').textContent=total().toLocaleString('ru-RU')+' ₽';
+  $('btn-wa').href='https://wa.me/79209125192?text='+encodeURIComponent(msg());
+}
+document.querySelectorAll('input[name="ct"]').forEach(function(e){e.addEventListener('change',upd)});
+['wt','fl','dt','cm'].forEach(function(i){$(i).addEventListener('input',upd)});
+var d=new Date();d.setDate(d.getDate()+3);
 var iso=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
 $('dt').value=iso;$('dt').min=iso;
-calc();
+upd();
 </script>
 </body>
 </html>
